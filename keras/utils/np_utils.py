@@ -46,3 +46,6 @@ def probas_to_classes(y_pred):
 
 def categorical_probas_to_classes(p):
     return np.argmax(p, axis=1)
+
+def get_random_generator(np_rng=None):
+    return np_rng if np_rng else np.random

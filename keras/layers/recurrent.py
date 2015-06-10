@@ -296,7 +296,7 @@ class LSTM(Layer):
         self.inner_activation = activations.get(inner_activation)
         self.input = T.tensor3()
 
-        self.W_i = self.init((self.input_dim, self.output_dim))
+        self.W_i =  self.init((self.input_dim, self.output_dim))
         self.U_i = self.inner_init((self.output_dim, self.output_dim))
         self.b_i = shared_zeros((self.output_dim))
 
